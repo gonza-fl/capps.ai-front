@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c6fffca8-c6c6-4fc5-b072-9a3cdf970f8d"
+      }
+    },
+    "owner": "cappsai"
   }
 }
