@@ -1,11 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import InputForm from "../components/InputForm";
-import ButtonCAps from "../components/ButtonCApps";
-import TermsAndConditions from "../components/TermsAndConditions";
-import AccountText from "../components/AccountText";
-// import CheckBox from "@react-native-community/checkbox";
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import InputForm from '../components/InputForm';
+import ButtonCAps from '../components/ButtonCApps';
+import TermsAndConditions from '../components/TermsAndConditions';
+import AccountText from '../components/AccountText';
+// import CheckBox from '@react-native-community/checkbox';
 
 export default function Register() {
   // const [value, setValue] = useState(false);
@@ -16,14 +16,14 @@ export default function Register() {
       <View style={(styles.title, styles.margin)}>
         <Text style={[styles.titleText]}>Bienvenidos a CApps</Text>
         <InputForm
-          Content={"nombre completo"}
-          Placeholder={"arnaldo benito camelo mclovin"}
+          Content={'nombre completo'}
+          Placeholder={'arnaldo benito camelo mclovin'}
         />
-        <InputForm Content={"email"} Placeholder={"benito@camelo.com"} />
-        <InputForm Content={"contraseña"} Placeholder={"su contraseña"} />
+        <InputForm Content={'email'} Placeholder={'benito@camelo.com'} />
+        <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
         <InputForm
-          Content={"confirmar contraseña"}
-          Placeholder={"repita su contraseña"}
+          Content={'confirmar contraseña'}
+          Placeholder={'repita su contraseña'}
         />
         <TermsAndConditions />
         {/* <CheckBox value={value} onValueChange={(val) => setValue(val)} /> */}
@@ -37,19 +37,19 @@ export default function Register() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
   },
   title: {
     flex: 1,
-    alignItems: "baseline",
-    justifyContent: "flex-start",
+    alignItems: 'baseline',
+    justifyContent: 'flex-start',
   },
   margin: {
     marginHorizontal: 30,
   },
   titleText: {
     fontSize: 23,
-    fontWeight: "500",
+    fontWeight: '500',
     marginTop: 110,
     marginBottom: 20,
   },
