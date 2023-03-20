@@ -3,7 +3,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import InputForm from "../components/InputForm";
 import ButtonCAps from "../components/ButtonCApps";
-import AccountText from "../components/AccoutText";
+import AccountText from "../components/AccountText";
 
 export default function Login() {
   return (
