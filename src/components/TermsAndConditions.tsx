@@ -1,5 +1,5 @@
-import React from "react";
-import { TouchableOpacity, Text, StyleSheet, View } from "react-native";
+import React from 'react';
+import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
 
 export default function TermsAndConditions() {
   return (
@@ -16,14 +16,14 @@ export default function TermsAndConditions() {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: "center",
-    flexDirection: "row",
+    alignItems: 'center',
+    flexDirection: 'row',
     marginVertical: 20,
   },
   textBold: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   color: {
-    color: "#00e0e0",
+    color: '#00e0e0',
   },
 });
