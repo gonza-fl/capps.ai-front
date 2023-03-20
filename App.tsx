@@ -19,11 +19,11 @@ function HomeScreen({ navigation }: Props): JSX.Element {
       <StatusBar style='auto' />
       <Button
         title='Go to Register'
-        onPress={() => navigation.navigate('Register')}
+        onPress={() => navigation.navigate("Register")}
       />
       <Button
         title='Go to Login'
-        onPress={() => navigation.navigate('Login')}
+        onPress={() => navigation.navigate("Login")}
       />
     </View>
   );
