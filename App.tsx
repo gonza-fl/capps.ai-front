@@ -1,12 +1,12 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Register from "./src/screens/RegisterScreen";
-import Login from "./src/screens/LoginScreen";
-import { ParamListBase } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View, Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Register from './src/screens/RegisterScreen';
+import Login from './src/screens/LoginScreen';
+import { ParamListBase } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 interface Props {
   navigation: NativeStackNavigationProp<ParamListBase>;
@@ -19,11 +19,11 @@ function HomeScreen({ navigation }: Props): JSX.Element {
       <StatusBar style='auto' />
       <Button
         title='Go to Register'
-        onPress={() => navigation.navigate("Register")}
+        onPress={() => navigation.navigate('Register')}
       />
       <Button
         title='Go to Login'
-        onPress={() => navigation.navigate("Login")}
+        onPress={() => navigation.navigate('Login')}
       />
     </View>
   );
@@ -43,7 +43,7 @@ function App() {
         <Stack.Screen
           name='Home'
           component={HomeScreen}
-          options={{ title: "Overview" }}
+          options={{ title: 'Overview' }}
         />
         <Stack.Screen name='Register' component={Register} />
         <Stack.Screen name='Login' component={Login} />
@@ -57,8 +57,8 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
