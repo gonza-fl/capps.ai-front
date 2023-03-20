@@ -1,9 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import InputForm from "../components/InputForm";
-import ButtonCAps from "../components/ButtonCApps";
-import AccountText from "../components/AccountText";
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import InputForm from '../components/InputForm';
+import ButtonCAps from '../components/ButtonCApps';
+import AccountText from '../components/AccountText';
 
 export default function Login() {
   return (
@@ -12,10 +12,10 @@ export default function Login() {
       <View style={(styles.title, styles.margin)}>
         <Text style={[styles.titleText]}>Bienvenidos a CApps</Text>
         <InputForm
-          Content={"email o nombre de usuario"}
-          Placeholder={"benito@camelo.com"}
+          Content={'email o nombre de usuario'}
+          Placeholder={'benito@camelo.com'}
         />
-        <InputForm Content={"contraseña"} Placeholder={"su contraseña"} />
+        <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
         <View style={styles.marginbutton}>
           <ButtonCAps Title='Ingresar' />
         </View>
@@ -32,12 +32,12 @@ export default function Login() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
   },
   title: {
     flex: 1,
-    alignItems: "baseline",
-    justifyContent: "flex-start",
+    alignItems: 'baseline',
+    justifyContent: 'flex-start',
   },
   margin: {
     marginHorizontal: 30,
@@ -47,15 +47,15 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontSize: 23,
-    fontWeight: "500",
+    fontWeight: '500',
     marginTop: 110,
     marginBottom: 20,
   },
   apart: {
-    marginTop: "50%",
+    marginTop: '50%',
   },
   aparttext: {
-    color: "#00e0e0",
+    color: '#00e0e0',
     fontSize: 16,
   },
 });
