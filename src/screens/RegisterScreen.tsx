@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import InputForm from "../components/InputForm";
 import ButtonCAps from "../components/ButtonCApps";
 import TermsAndConditions from "../components/TermsAndConditions";
-import AccountText from "../components/AccoutText";
+import AccountText from "../components/AccountText";
 // import CheckBox from "@react-native-community/checkbox";
 
 export default function Register() {
