@@ -5,7 +5,7 @@ import InputForm from '../components/InputForm';
 import ButtonCAps from '../components/ButtonCApps';
 import AccountText from '../components/AccountText';
 
-export default function Login() {
+export default function LoginScreen() {
   return (
     <View style={styles.container}>
       <StatusBar style='auto' backgroundColor='#999' />
@@ -14,9 +14,9 @@ export default function Login() {
         <InputForm Content={'email o nombre de usuario'} Placeholder={'benito@camelo.com'} />
         <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
         <View style={styles.marginbutton}>
-          <ButtonCAps Title='Ingresar' />
+          <ButtonCAps textContent='Ingresar' />
         </View>
-        <AccountText Title='No tengo una cuenta' />
+        <AccountText textContent='No tengo una cuenta' />
         <View style={styles.apart}>
           <Text style={styles.aparttext}>Olvidé mi contraseña</Text>
           <Text style={styles.aparttext}>Política de privacidad</Text>
