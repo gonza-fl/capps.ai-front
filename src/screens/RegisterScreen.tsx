@@ -15,16 +15,10 @@ export default function Register() {
       <StatusBar style='auto' backgroundColor='#999' />
       <View style={(styles.title, styles.margin)}>
         <Text style={[styles.titleText]}>Bienvenidos a CApps</Text>
-        <InputForm
-          Content={'nombre completo'}
-          Placeholder={'arnaldo benito camelo mclovin'}
-        />
+        <InputForm Content={'nombre completo'} Placeholder={'arnaldo benito camelo mclovin'} />
         <InputForm Content={'email'} Placeholder={'benito@camelo.com'} />
         <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
-        <InputForm
-          Content={'confirmar contraseña'}
-          Placeholder={'repita su contraseña'}
-        />
+        <InputForm Content={'confirmar contraseña'} Placeholder={'repita su contraseña'} />
         <TermsAndConditions />
         {/* <CheckBox value={value} onValueChange={(val) => setValue(val)} /> */}
         <ButtonCAps Title='Registrarme' />

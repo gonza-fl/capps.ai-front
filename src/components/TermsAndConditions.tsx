@@ -6,9 +6,7 @@ export default function TermsAndConditions() {
     <View style={styles.container}>
       <Text>✅{/*CheckBox de polenta*/} Eh leido y acepto los </Text>
       <TouchableOpacity>
-        <Text style={[styles.textBold, styles.color]}>
-          terminos y conidiones
-        </Text>
+        <Text style={[styles.textBold, styles.color]}>terminos y conidiones</Text>
       </TouchableOpacity>
     </View>
   );
