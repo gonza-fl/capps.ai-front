@@ -8,7 +8,7 @@ import AccountText from '../components/AccountText';
 export default function LoginScreen() {
   return (
     <View style={styles.container}>
-      <StatusBar style='auto' backgroundColor='#999' />
+      <StatusBar style='auto' />
       <View style={(styles.title, styles.margin)}>
         <Text style={[styles.titleText]}>Bienvenidos a CApps</Text>
         <InputForm Content={'email o nombre de usuario'} Placeholder={'benito@camelo.com'} />
