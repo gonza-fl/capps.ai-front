@@ -16,7 +16,7 @@ export default function Login() {
         <View style={styles.marginbutton}>
           <ButtonCAps Title='Ingresar' />
         </View>
-        <AccountText Title='No tengo una cuenta' />
+        <AccountText title='No tengo una cuenta' />
         <View style={styles.apart}>
           <Text style={styles.aparttext}>Olvidé mi contraseña</Text>
           <Text style={styles.aparttext}>Política de privacidad</Text>
