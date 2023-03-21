@@ -11,10 +11,7 @@ export default function Login() {
       <StatusBar style='auto' backgroundColor='#999' />
       <View style={(styles.title, styles.margin)}>
         <Text style={[styles.titleText]}>Bienvenidos a CApps</Text>
-        <InputForm
-          Content={'email o nombre de usuario'}
-          Placeholder={'benito@camelo.com'}
-        />
+        <InputForm Content={'email o nombre de usuario'} Placeholder={'benito@camelo.com'} />
         <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
         <View style={styles.marginbutton}>
           <ButtonCAps Title='Ingresar' />
