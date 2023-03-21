@@ -2,13 +2,13 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 interface Props {
-  text?: string;
+  textContent: string;
 }
 
-export default function ButtonCAps({ text }: Props) {
+export default function ButtonCAps({ textContent }: Props) {
   return (
     <TouchableOpacity style={styles.button}>
-      <Text style={styles.buttonText}>{text}</Text>
+      <Text style={styles.buttonText}>{textContent}</Text>
     </TouchableOpacity>
   );
 }

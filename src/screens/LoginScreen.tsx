@@ -14,9 +14,9 @@ export default function LoginScreen() {
         <InputForm Content={'email o nombre de usuario'} Placeholder={'benito@camelo.com'} />
         <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
         <View style={styles.marginbutton}>
-          <ButtonCAps text='Ingresar' />
+          <ButtonCAps textContent='Ingresar' />
         </View>
-        <AccountText text='No tengo una cuenta' />
+        <AccountText textContent='No tengo una cuenta' />
         <View style={styles.apart}>
           <Text style={styles.aparttext}>Olvidé mi contraseña</Text>
           <Text style={styles.aparttext}>Política de privacidad</Text>

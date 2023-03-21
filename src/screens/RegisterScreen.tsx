@@ -17,8 +17,8 @@ export default function RegisterScreen() {
         <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
         <InputForm Content={'confirmar contraseña'} Placeholder={'repita su contraseña'} />
         <TermsAndConditions />
-        <ButtonCAps text='Registrarme' />
-        <AccountText text='Ya tengo una cuenta' />
+        <ButtonCAps textContent='Registrarme' />
+        <AccountText textContent='Ya tengo una cuenta' />
       </View>
     </View>
   );
