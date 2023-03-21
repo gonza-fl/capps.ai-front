@@ -5,11 +5,8 @@ import InputForm from '../components/InputForm';
 import ButtonCAps from '../components/ButtonCApps';
 import TermsAndConditions from '../components/TermsAndConditions';
 import AccountText from '../components/AccountText';
-// import CheckBox from '@react-native-community/checkbox';
 
-export default function Register() {
-  // const [value, setValue] = useState(false);
-
+export default function RegisterScreen() {
   return (
     <View style={styles.container}>
       <StatusBar style='auto' backgroundColor='#999' />
@@ -20,9 +17,8 @@ export default function Register() {
         <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
         <InputForm Content={'confirmar contraseña'} Placeholder={'repita su contraseña'} />
         <TermsAndConditions />
-        {/* <CheckBox value={value} onValueChange={(val) => setValue(val)} /> */}
-        <ButtonCAps Title='Registrarme' />
-        <AccountText Title='Ya tengo una cuenta' />
+        <ButtonCAps text='Registrarme' />
+        <AccountText text='Ya tengo una cuenta' />
       </View>
     </View>
   );

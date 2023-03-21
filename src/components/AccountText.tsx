@@ -2,13 +2,13 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 interface Props {
-  title: string;
+  text?: string;
 }
 
-export default function AccountText({ title }: Props) {
+export default function AccountText({ text }: Props) {
   return (
     <TouchableOpacity style={styles.underline}>
-      <Text style={styles.text}>{title}</Text>
+      <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>
   );
 }
