@@ -4,9 +4,7 @@
     "allowJs": false,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     }
   },
   "extends": "expo/tsconfig.base"
