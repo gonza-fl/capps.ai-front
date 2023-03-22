@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   titleText: {
     fontSize: 23,
     fontWeight: '500',
-    marginTop: 110,
+    marginTop: 90,
     marginBottom: 20,
   },
 });
