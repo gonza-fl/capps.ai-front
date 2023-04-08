@@ -10,7 +10,7 @@ import {
   Keyboard,
 } from 'react-native';
 import InputForm from '../components/InputForm';
-import ButtonCAps from '../components/ButtonCApps';
+import ButtonCapps from '../components/ButtonCapps';
 import AccountText from '../components/AccountText';
 
 export default function LoginScreen() {
@@ -27,7 +27,7 @@ export default function LoginScreen() {
             <InputForm Content={'email o nombre de usuario'} Placeholder={'benito@camelo.com'} />
             <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
             <View style={styles.marginbutton}>
-              <ButtonCAps textContent='Ingresar' />
+              <ButtonCapps textContent='Ingresar' />
             </View>
             <AccountText textContent='No tengo una cuenta' />
             <View style={styles.apart}>
@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
   titleText: {
     fontSize: 23,
     fontWeight: '500',
-    marginTop: 90,
     marginBottom: 20,
   },
   apart: {

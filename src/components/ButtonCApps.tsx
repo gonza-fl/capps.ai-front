@@ -5,7 +5,7 @@ interface Props {
   textContent: string;
 }
 
-export default function ButtonCAps({ textContent }: Props) {
+export default function ButtonCapps({ textContent }: Props) {
   return (
     <TouchableOpacity style={styles.button}>
       <Text style={styles.buttonText}>{textContent}</Text>

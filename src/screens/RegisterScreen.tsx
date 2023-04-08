@@ -10,7 +10,7 @@ import {
   Keyboard,
 } from 'react-native';
 import InputForm from '../components/InputForm';
-import ButtonCAps from '../components/ButtonCApps';
+import ButtonCapps from '../components/ButtonCapps';
 import TermsAndConditions from '../components/TermsAndConditions';
 import AccountText from '../components/AccountText';
 
@@ -22,14 +22,14 @@ export default function RegisterScreen() {
     >
       <StatusBar style='auto' />
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-        <View style={styles.margin}>
+        <View style={styles.formContainer}>
           <Text style={[styles.titleText]}>Bienvenidos a CappsIA</Text>
           <InputForm Content={'Nombre completo'} Placeholder={'arnaldo benito camelo mclovin'} />
           <InputForm Content={'Email'} Placeholder={'benito@camelo.com'} />
           <InputForm Content={'Contraseña'} Placeholder={'su contraseña'} />
           <InputForm Content={'Confirmar contraseña'} Placeholder={'repita su contraseña'} />
           <TermsAndConditions />
-          <ButtonCAps textContent='Registrarme' />
+          <ButtonCapps textContent='Registrarme' />
           <AccountText textContent='Ya tengo una cuenta' />
         </View>
       </TouchableWithoutFeedback>
@@ -44,13 +44,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 10,
   },
-  margin: {
+  formContainer: {
     paddingHorizontal: 30,
   },
   titleText: {
     fontSize: 23,
     fontWeight: '500',
-    marginTop: 90,
     marginBottom: 20,
   },
 });
