@@ -1,13 +1,17 @@
+import { ParamListBase } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 interface Props {
   textContent: string;
+  navigation: NativeStackNavigationProp<ParamListBase>;
+  screen: string;
 }
 
-export default function AccountText({ textContent }: Props) {
+export default function AccountText({ textContent, navigation, screen }: Props) {
   return (
-    <TouchableOpacity style={styles.underline}>
+    <TouchableOpacity style={styles.underline} onPress={() => navigation.navigate(screen)}>
       <Text style={styles.text}>{textContent}</Text>
     </TouchableOpacity>
   );
