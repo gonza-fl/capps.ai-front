@@ -12,8 +12,10 @@ function HomeScreen({ navigation }: Props): JSX.Element {
   return (
     <View style={styles.container}>
       <StatusBar style='auto' />
-      <Button title='Go to Register' onPress={() => navigation.navigate('Register')} />
-      <Button title='Go to Login' onPress={() => navigation.navigate('Login')} />
+      <View style={styles.buttonsContainer}>
+        <Button title='Registrarse' onPress={() => navigation.navigate('Register')} />
+        <Button title='Ingresar' onPress={() => navigation.navigate('Login')} />
+      </View>
     </View>
   );
 }
@@ -26,5 +28,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  buttonsContainer: {
+    flex: 0.15,
+    justifyContent: 'space-around',
   },
 });
