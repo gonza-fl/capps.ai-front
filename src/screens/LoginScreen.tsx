@@ -12,8 +12,14 @@ import {
 import InputForm from '../components/InputForm';
 import ButtonCapps from '../components/ButtonCapps';
 import AccountText from '../components/AccountText';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { ParamListBase } from '@react-navigation/native';
 
-export default function LoginScreen() {
+interface Props {
+  navigation: NativeStackNavigationProp<ParamListBase>;
+}
+
+export default function LoginScreen({ navigation }: Props) {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -24,12 +30,16 @@ export default function LoginScreen() {
           <StatusBar style='auto' />
           <View style={styles.margin}>
             <Text style={[styles.titleText]}>Bienvenidos a CappsIA</Text>
-            <InputForm Content={'email o nombre de usuario'} Placeholder={'benito@camelo.com'} />
-            <InputForm Content={'contraseña'} Placeholder={'su contraseña'} />
+            <InputForm Content={'Email'} Placeholder={'usuario@mail.com'} />
+            <InputForm Content={'Contraseña'} Placeholder={'su contraseña'} />
             <View style={styles.marginbutton}>
               <ButtonCapps textContent='Ingresar' />
             </View>
-            <AccountText textContent='No tengo una cuenta' />
+            <AccountText
+              textContent='No tengo una cuenta'
+              navigation={navigation}
+              screen='Register'
+            />
             <View style={styles.apart}>
               <Text style={styles.aparttext}>Olvidé mi contraseña</Text>
               <Text style={styles.aparttext}>Política de privacidad</Text>

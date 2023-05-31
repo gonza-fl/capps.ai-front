@@ -13,8 +13,14 @@ import InputForm from '../components/InputForm';
 import ButtonCapps from '../components/ButtonCapps';
 import TermsAndConditions from '../components/TermsAndConditions';
 import AccountText from '../components/AccountText';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { ParamListBase } from '@react-navigation/native';
 
-export default function RegisterScreen() {
+interface Props {
+  navigation: NativeStackNavigationProp<ParamListBase>;
+}
+
+export default function RegisterScreen({ navigation }: Props) {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -30,7 +36,7 @@ export default function RegisterScreen() {
           <InputForm Content={'Confirmar contraseña'} Placeholder={'repita su contraseña'} />
           <TermsAndConditions />
           <ButtonCapps textContent='Registrarme' />
-          <AccountText textContent='Ya tengo una cuenta' />
+          <AccountText textContent='Ya tengo una cuenta' navigation={navigation} screen='Login' />
         </View>
       </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
