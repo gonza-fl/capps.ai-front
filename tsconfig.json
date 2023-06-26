@@ -4,7 +4,7 @@
     "allowJs": false,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
+      "@*": [
         "src/*"
       ],
       "@screens": [
