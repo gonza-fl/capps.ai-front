@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 interface Props {
-  textContent: string;
+  press?: () => void;
 }
 
-export default function ButtonCapps({ textContent }: Props) {
+export default function ButtonCapps({ children, press }: PropsWithChildren<Props>) {
   return (
-    <TouchableOpacity style={styles.button}>
-      <Text style={styles.buttonText}>{textContent}</Text>
+    <TouchableOpacity onPress={press} style={styles.button}>
+      <Text style={styles.buttonText}>{children}</Text>
     </TouchableOpacity>
   );
 }
@@ -20,10 +20,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 5,
     alignItems: 'center',
-    width: '100%',
   },
   buttonText: {
     color: '#fff',
+    backgroundColor: '#00e0e0',
     fontWeight: '400',
     fontSize: 18,
   },

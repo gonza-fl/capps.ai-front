@@ -9,9 +9,9 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from 'react-native';
-import InputForm from '../components/InputForm';
-import ButtonCapps from '../components/ButtonCapps';
-import AccountText from '../components/AccountText';
+import InputForm from '@components/InputForm';
+import ButtonCapps from '@components/ButtonCapps';
+import AccountText from '@components/AccountText';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { ParamListBase } from '@react-navigation/native';
 
@@ -33,7 +33,7 @@ export default function LoginScreen({ navigation }: Props) {
             <InputForm Content={'Email'} Placeholder={'usuario@mail.com'} />
             <InputForm Content={'Contraseña'} Placeholder={'su contraseña'} />
             <View style={styles.marginbutton}>
-              <ButtonCapps textContent='Ingresar' />
+              <ButtonCapps> Ingresar </ButtonCapps>
             </View>
             <AccountText
               textContent='No tengo una cuenta'

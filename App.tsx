@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen, LoginScreen, RegisterScreen, CalendarScreen } from '@screens';
+import { HomeScreen, LoginScreen, RegisterScreen, StarterScreen } from '@screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -9,15 +9,15 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='Home'
+        initialRouteName='Starter'
         screenOptions={{
-          headerShown: false,
+          headerShown: true,
         }}
       >
         <Stack.Screen name='Home' component={HomeScreen} options={{ title: 'Overview' }} />
+        <Stack.Screen name='Starter' component={StarterScreen} options={{ title: 'Starter' }} />
         <Stack.Screen name='Register' component={RegisterScreen} />
         <Stack.Screen name='Login' component={LoginScreen} />
-        <Stack.Screen name='Calendar' component={CalendarScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

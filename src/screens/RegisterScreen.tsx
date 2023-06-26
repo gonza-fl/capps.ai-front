@@ -9,10 +9,10 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from 'react-native';
-import InputForm from '../components/InputForm';
-import ButtonCapps from '../components/ButtonCapps';
-import TermsAndConditions from '../components/TermsAndConditions';
-import AccountText from '../components/AccountText';
+import InputForm from '@components/InputForm';
+import ButtonCapps from '@components/ButtonCapps';
+import TermsAndConditions from '@components/TermsAndConditions';
+import AccountText from '@components/AccountText';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { ParamListBase } from '@react-navigation/native';
 
@@ -35,7 +35,7 @@ export default function RegisterScreen({ navigation }: Props) {
           <InputForm Content={'Contraseña'} Placeholder={'su contraseña'} />
           <InputForm Content={'Confirmar contraseña'} Placeholder={'repita su contraseña'} />
           <TermsAndConditions />
-          <ButtonCapps textContent='Registrarme' />
+          <ButtonCapps> Registrarme </ButtonCapps>
           <AccountText textContent='Ya tengo una cuenta' navigation={navigation} screen='Login' />
         </View>
       </TouchableWithoutFeedback>
