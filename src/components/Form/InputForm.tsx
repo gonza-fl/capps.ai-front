@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 interface Props {
-  Placeholder: string;
-  Content: string;
+  placeholder?: string;
+  content: string;
+  handleOnChange: (key: string, text: string) => void;
 }
 
-export default function InputForm({ Placeholder, Content }: Props) {
+export default function InputForm({
+  content,
+  placeholder,
+  handleOnChange,
+}: PropsWithChildren<Props>) {
   return (
     <View>
-      <Text style={styles.form}>{Content}</Text>
-      <TextInput style={styles.inputform} placeholder={Placeholder} />
+      <Text style={styles.form}>{content}</Text>
+      {/* <TextInput style={styles.inputform} placeholder={placeholder} onChangeText={handleOnChange} /> */}
     </View>
   );
 }
@@ -29,5 +34,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 8,
     marginTop: 10,
+    color: '#fff',
   },
 });

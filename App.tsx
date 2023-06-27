@@ -9,12 +9,12 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='Starter'
+        initialRouteName='Home'
         screenOptions={{
           headerShown: true,
         }}
       >
-        <Stack.Screen name='Home' component={HomeScreen} options={{ title: 'Overview' }} />
+        <Stack.Screen name='Home' component={HomeScreen} options={{ title: 'Home' }} />
         <Stack.Screen name='Starter' component={StarterScreen} options={{ title: 'Starter' }} />
         <Stack.Screen name='Register' component={RegisterScreen} />
         <Stack.Screen name='Login' component={LoginScreen} />

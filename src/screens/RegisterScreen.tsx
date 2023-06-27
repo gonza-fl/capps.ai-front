@@ -9,7 +9,7 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from 'react-native';
-import InputForm from '@components/InputForm';
+import InputForm from '@components/Form/InputForm';
 import ButtonCapps from '@components/ButtonCapps';
 import TermsAndConditions from '@components/TermsAndConditions';
 import AccountText from '@components/AccountText';
