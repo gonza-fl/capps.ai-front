@@ -41,24 +41,48 @@ const FormCapps = ({ isModalVisible, setIsModalVisible }: Props) => {
         <View style={styles.modalContent}>
           <Text style={styles.modalTitle}>Nuevo Paciente</Text>
           <InputForm
-            placeholder='Titulo'
-            content=''
+            placeholder='Nombre'
+            content='Nombre'
             // value={isEdit ? targetTask.title : taskData.title}
             handleOnChange={text => handleOnChange('nombre', text)}
           />
           <InputForm
-            placeholder='Descripcion de la tarea'
-            content=''
+            placeholder='Apellido'
+            content='Apellido'
+            // value={isEdit ? targetTask.title : taskData.title}
+            handleOnChange={text => handleOnChange('nombre', text)}
+          />
+          <InputForm
+            placeholder='Fech Nac'
+            content='Fech Nac'
+            // value={isEdit ? targetTask.description : taskData.description}
+            handleOnChange={text => handleOnChange('description', text)}
+          />
+          <InputForm
+            placeholder='Altura'
+            content='Altura'
+            // value={isEdit ? targetTask.description : taskData.description}
+            handleOnChange={text => handleOnChange('description', text)}
+          />
+          <InputForm
+            placeholder='Peso'
+            content='Peso'
+            // value={isEdit ? targetTask.description : taskData.description}
+            handleOnChange={text => handleOnChange('description', text)}
+          />
+          <InputForm
+            placeholder='Domicilio'
+            content='Domicilio'
             // value={isEdit ? targetTask.description : taskData.description}
             handleOnChange={text => handleOnChange('description', text)}
           />
           <View style={styles.buttonsContainer}>
-            <LinearGradient colors={['#a00498', '#f7bd56']} style={styles.gradient1}>
+            <LinearGradient colors={['#00e0e0', 'blue']} style={styles.gradient1}>
               <TouchableOpacity style={styles.touchableOpacity1} onPress={closeModal}>
                 <Text style={styles.closeButtonText}>Cerrar</Text>
               </TouchableOpacity>
             </LinearGradient>
-            <LinearGradient colors={['#a00498', '#f7bd56']} style={styles.gradient1}>
+            <LinearGradient colors={['#00e0e0', 'blue']} style={styles.gradient1}>
               <TouchableOpacity style={styles.touchableOpacity1} onPress={handlePress}>
                 <Text style={styles.closeButtonText}>Guardar</Text>
               </TouchableOpacity>
@@ -81,10 +105,10 @@ const styles = StyleSheet.create({
   },
   modalContent: {
     width: '75%',
-    backgroundColor: '#161819',
+    backgroundColor: '#fff',
     padding: 20,
     borderRadius: 20,
-    shadowColor: '#fff',
+    shadowColor: '#161819',
     shadowOffset: {
       width: 1,
       height: 1,
@@ -98,29 +122,23 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
     textAlign: 'center',
-    color: '#fff',
+    color: '#161819',
   },
   input: {
     borderWidth: 1,
-    borderColor: '#fff',
     padding: 10,
     marginBottom: 10,
     borderRadius: 5,
-    backgroundColor: '#fff',
+    backgroundColor: '#161819',
   },
   buttonsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
+    marginTop: 20,
     height: 'auto',
   },
-  closeButton: {
-    backgroundColor: '#161819',
-    padding: 10,
-    borderRadius: 5,
-    margin: 20,
-  },
   closeButtonText: {
-    color: '#fff',
+    color: '#161819',
     textAlign: 'center',
   },
   gradient1: {
@@ -131,10 +149,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   touchableOpacity1: {
-    width: 60,
-    height: 30,
+    width: 65,
+    height: 35,
     borderRadius: 6,
-    backgroundColor: '#161819',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
