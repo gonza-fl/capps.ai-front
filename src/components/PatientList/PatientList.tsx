@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { SwipeListView } from 'react-native-swipe-list-view';
-import { PatientItem } from './patientItem';
+import { PatientItem } from './PatientItem';
 import HiddenPatientItem from './HiddenPatientItem';
 
 interface Patient {

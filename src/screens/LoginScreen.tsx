@@ -30,8 +30,8 @@ export default function LoginScreen({ navigation }: Props) {
           <StatusBar style='auto' />
           <View style={styles.margin}>
             <Text style={[styles.titleText]}>Bienvenidos a CappsIA</Text>
-            <InputForm Content={'Email'} Placeholder={'usuario@mail.com'} />
-            <InputForm Content={'Contraseña'} Placeholder={'su contraseña'} />
+            <InputForm content={'Email'} placeholder={'usuario@mail.com'} />
+            <InputForm content={'Contraseña'} placeholder={'su contraseña'} />
             <View style={styles.marginbutton}>
               <ButtonCapps> Ingresar </ButtonCapps>
             </View>
