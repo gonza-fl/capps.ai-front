@@ -1,11 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableHighlight, TouchableOpacity, View } from 'react-native';
-
-interface Patient {
-  id: number;
-  name: string;
-  present: boolean;
-}
+import { Patient } from './interface';
 
 interface Props {
   item: Patient;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, LocaleConfig } from 'react-native-calendars';
 import { View, StyleSheet, Text } from 'react-native';
+import { datesOfCalendarConfigs } from '@constants';
 
 interface IDay {
   dateString: string;
@@ -10,39 +11,7 @@ interface IDay {
   year: number;
 }
 
-LocaleConfig.locales['ar'] = {
-  monthNames: [
-    'Enero',
-    'Febrero',
-    'Marzo',
-    'Abril',
-    'Mayo',
-    'Junio',
-    'Julio',
-    'Agosto',
-    'Septiembre',
-    'Octubre',
-    'Noviembre',
-    'Diciembre',
-  ],
-  monthNamesShort: [
-    'Ene.',
-    'Feb.',
-    'Mar.',
-    'Abr.',
-    'May.',
-    'Jun.',
-    'Jul.',
-    'Ago.',
-    'Sep.',
-    'Oct.',
-    'Nov.',
-    'Dic.',
-  ],
-  dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-  dayNamesShort: ['Dom.', 'Lun.', 'Mar.', 'Mie.', 'Jue.', 'Vie.', 'Sab.'],
-  today: 'Hoy',
-};
+LocaleConfig.locales['ar'] = datesOfCalendarConfigs;
 
 LocaleConfig.defaultLocale = 'ar';
 

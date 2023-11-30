@@ -3,12 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import { SwipeListView } from 'react-native-swipe-list-view';
 import { PatientItem } from './PatientItem';
 import HiddenPatientItem from './HiddenPatientItem';
-
-interface Patient {
-  id: number;
-  name: string;
-  present: boolean;
-}
+import { Patient } from './interface';
 
 interface PatientListProps {
   patients: Patient[];
